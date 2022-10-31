@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import './App.css';
+import Chart from "./components/Chart"
 
   async function fetchPost(setItems) {
     const response = await fetch(
@@ -8,7 +9,7 @@ import './App.css';
 
     const food = await response.json();
     setItems(food);
-    console.log(food.foods[0].foodNutrients[0].nutrientName);
+    console.log(food.foods[0].foodNutrients);
   };
 
 
@@ -26,7 +27,8 @@ function App() {
 
   return (
     <div className="App">
-      Heyy
+      Heyy, See Apple's Nutirents<br/>
+      <Chart />
     </div>
   );
 }
