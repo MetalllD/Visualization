@@ -1,3 +1,3 @@
 # Visualization
 
-https://MetalllD.github.io/react-gh-pages
+https://metallld.github.io/Visualization
