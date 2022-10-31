@@ -27,7 +27,7 @@ export const options = {
     },
     title: {
       display: true,
-      text: 'Nutrients in your food item',
+      text: 'Nutrients in your food item in G(grams)',
     },
   },
 };
