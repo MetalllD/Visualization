@@ -9,7 +9,7 @@ import Chart from "./components/Chart"
 
     const food = await response.json();
     setItems(food);
-    console.log(food.foods[0].foodNutrients);
+    /*console.log(food.foods[0].foodNutrients);*/
   };
 
 
@@ -28,7 +28,7 @@ function App() {
   return (
     <div className="App">
       Heyy, See Apple's Nutirents<br/>
-      <Chart />
+      <Chart info={items} />
     </div>
   );
 }
