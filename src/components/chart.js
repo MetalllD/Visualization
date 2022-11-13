@@ -1,5 +1,6 @@
-import React from 'react';
+import React, {useCallback, useEffect} from 'react';
 import { useState } from 'react';
+
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -9,15 +10,16 @@ import {
   Tooltip,
   Legend,
 } from 'chart.js';
+
 import { Bar } from 'react-chartjs-2';
 
 ChartJS.register(
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  Title,
-  Tooltip,
-  Legend
+    CategoryScale,
+    LinearScale,
+    BarElement,
+    Title,
+    Tooltip,
+    Legend
 );
 
 export const options = {
@@ -34,33 +36,35 @@ export const options = {
   },
 };
 
-const labels = ['Calcium, Ca', 'Iron, Fe', 'Sodium, Na', 'Vitamin C', 'Cholesterol', 'Protein', 'Potassium'];
-
+// const labels = ['Calcium, Ca', 'Iron, Fe', 'Sodium, Na', 'Vitamin C', 'Cholesterol', 'Protein', 'Potassium'];
 
 export default function Chart(props) {
 
-  const dataSet = []; 
+  const {info} = props;
 
+  const [data, setData] = useState({labels: [], datasets: []});
 
-/*  for (const val of props.info) {
-    dataSet.push(val.id);
-}*/
-
-  const [data,setData] = useState({
-    labels,
-    datasets: [
-      {
-        label: 'Nutrients',
-        data: dataSet,
+  const adaptInfo = useCallback(() => {
+    const labels = info.map((item) => item.nutrientName)
+    const data = info.map((item) => item.nutrientNumber)
+    setData({
+      labels,
+      datasets: [{
+        id: 1,
+        label: 'Nutrient Name vs Number',
         backgroundColor: 'rgba(209, 188, 227, 1)',
-      }
-    ],
-  });
+        data
+      }]
+    })
+  }, [info, setData])
 
-  console.log(props.info);
+  useEffect(() => {
+    if(info) adaptInfo()
+  }, [info, adaptInfo])
 
+  if(!info)
+    return <>loading...</>
 
-  return (
-  <Bar options={options} data={data}/>
-  );
+  return <Bar options={options} data={data}/>
+
 }
