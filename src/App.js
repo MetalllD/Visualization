@@ -9,7 +9,7 @@ import Chart from "./components/Chart"
 
     const food = await response.json();
     setItems(food);
-    /*console.log(food.foods[0].foodNutrients);*/
+    //console.log(food.foods[0].foodNutrients);
   };
 
 
@@ -24,6 +24,7 @@ function App() {
   /*console.log('data outside hook', items.map((m) => <span>${m.foods[0].foodNutrients[0].nutrientName}</span>));*/
 
   /*const inject = items ? items.map((it, i) => <li key={i}>{it.foods[0].foodNutrients[i].nutrientName}</li>) : null;*/
+
 
   return (
     <div className="App">

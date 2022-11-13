@@ -39,18 +39,30 @@ const labels = ['Calcium, Ca', 'Iron, Fe', 'Sodium, Na', 'Vitamin C', 'Cholester
 
 export default function Chart(props) {
 
+  const dataSet = []; 
+
+
+  /*for (const val of props) {
+
+
+    dataSet.push(val.id);
+    //dataSet2.push(val.postId)
+    // labelSet.push(val.name)
+}*/
+
   const [data,setData] = useState({
     labels,
     datasets: [
       {
         label: 'Nutrients',
-        data: [1,2,3,4,5,6,7],
+        data: dataSet,
         backgroundColor: 'rgba(209, 188, 227, 1)',
       }
     ],
   });
 
   console.log(props.info);
+
 
   return (
   <Bar options={options} data={data}/>
