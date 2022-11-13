@@ -21,7 +21,7 @@ ChartJS.register(
 );
 
 export const options = {
-  indexAxis: 'y',
+  indexAxis: 'x',
   responsive: true,
   plugins: {
     legend: {
@@ -42,12 +42,8 @@ export default function Chart(props) {
   const dataSet = []; 
 
 
-  /*for (const val of props) {
-
-
+/*  for (const val of props.info) {
     dataSet.push(val.id);
-    //dataSet2.push(val.postId)
-    // labelSet.push(val.name)
 }*/
 
   const [data,setData] = useState({
