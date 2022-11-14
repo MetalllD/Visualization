@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import './App.css';
-import Chart from "./components/Chart"
+import Chart from "./components/Chart";
+import Search from './components/SearchBar';
+
 
 async function fetchPost(setItems) {
     const response = await fetch(
@@ -16,13 +18,21 @@ function App() {
 
   const [items, setItems] = useState([]);
 
+  const { search } = window.location;
+  const query = new URLSearchParams(search).get('s');
+  const [searchInput, setSearchInput] = useState(query || 'Apple');
+
   useEffect(() => {
-    fetchPost(setItems);
-  }, []);
+    fetchPost(setItems,searchInput);
+  }, [searchInput]);
 
   return (
     <div className="App">
-      Heyy, See Apple's Nutirents<br/>
+      <Search 
+        searchQuery={searchInput}
+        setSearchQuery={setSearchInput}
+      />
+      Heyy, See {searchInput} Nutirents<br/>
       <Chart info={items} />
     </div>
   );
