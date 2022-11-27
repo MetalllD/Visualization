@@ -10,7 +10,7 @@ async function fetchPost(setItems,x) {
       );
 
     const food = await response.json();
-    setItems(food.foods[0].foodNutrients);
+    setItems(food.foods[0]);
 }
 
 
@@ -36,7 +36,8 @@ function App() {
       Here are {searchInput}'s Nutirents<br/>
       <br/>
       <br/>
-      <Chart info={items} />
+      (Values are given per {items.servingSize} {items.servingSizeUnit})
+      <Chart info={items.foodNutrients} />
     </div>
   );
 }

@@ -45,8 +45,15 @@ export default function Chart(props) {
   const [data, setData] = useState({labels: [], datasets: []});
 
   const adaptInfo = useCallback(() => {
-    const labels = info.map((item) => item.nutrientName)
-    const data = info.map((item) => item.nutrientNumber)
+
+    const labels = info.filter((item) => item.nutrientName!=="Energy").map((item)=> item.nutrientName)
+    
+    const data = info.map((item) => {
+    if((item.unitName)==="MG"){
+      return (item.nutrientNumber)/1000;}
+    else{
+      return item.nutrientNumber;
+    }})
     setData({
       labels,
       datasets: [{
