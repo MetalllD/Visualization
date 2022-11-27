@@ -1,4 +1,5 @@
 import "./Energy.css";
+import React from "react";
 
 export default function Energy(props) {
 
