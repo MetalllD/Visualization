@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import Chart from "./components/Chart";
 import Chart2 from "./components/Chart2";
+import Energy from "./components/Energy";
 import Search from './components/SearchBar';
 
 
@@ -43,6 +44,9 @@ function App() {
       </div>
       <div className="charts">
       <Chart2 info={items.foodNutrients} />
+      </div>
+      <div className="charts">
+      <Energy info={items.foodNutrients} />
       </div>
     </div>
   );
