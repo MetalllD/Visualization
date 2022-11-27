@@ -31,14 +31,14 @@ export const options = {
     },
     title: {
       display: true,
-      text: 'Nutrients in your food item in G(grams)',
+      text: 'Nutrients in your food item in MG(miligrams)',
     },
   },
 };
 
 // const labels = ['Calcium, Ca', 'Iron, Fe', 'Sodium, Na', 'Vitamin C', 'Cholesterol', 'Protein', 'Potassium'];
 
-export default function Chart(props) {
+export default function Chart2(props) {
 
   const {info} = props;
 
@@ -48,11 +48,11 @@ export default function Chart(props) {
 
     const dummy = info.filter((item) => item.nutrientName!=="Energy");
 
-    const labels = dummy.filter((item) => item.unitName!=="MG").map((item)=> item.nutrientName)
+    const labels = dummy.filter((item) => item.unitName!=="G").map((item)=> item.nutrientName)
 
     console.log(labels)
     
-    const data = info.filter((item) => item.unitName!=="MG").map((item)=> item.nutrientNumber)
+    const data = info.filter((item) => item.unitName!=="G").map((item)=> item.nutrientNumber)
 
     setData({
       labels,

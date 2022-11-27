@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import Chart from "./components/Chart";
+import Chart2 from "./components/Chart2";
 import Search from './components/SearchBar';
 
 
@@ -20,7 +21,7 @@ function App() {
 
   const { search } = window.location;
   const query = new URLSearchParams(search).get('s');
-  const [searchInput, setSearchInput] = useState(query || 'Apple');
+  const [searchInput, setSearchInput] = useState(query || 'Cheese');
 
   useEffect(() => {
     fetchPost(setItems,searchInput);
@@ -37,7 +38,12 @@ function App() {
       <br/>
       <br/>
       (Values are given per {items.servingSize} {items.servingSizeUnit})
+      <div className="charts">
       <Chart info={items.foodNutrients} />
+      </div>
+      <div className="charts">
+      <Chart2 info={items.foodNutrients} />
+      </div>
     </div>
   );
 }

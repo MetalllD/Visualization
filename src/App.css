@@ -1,8 +1,10 @@
 .App {
   text-align: center;
-  padding:2% 8%;
+  padding:2% 24%;
   background-color: black;
-  color:rgb(140, 191, 248);;
-  height:100vh;
+  color:rgb(140, 191, 248);
 }
 
+.charts{
+  margin-top:10%;
+}
