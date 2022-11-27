@@ -51,7 +51,7 @@ export default function Chart(props) {
       labels,
       datasets: [{
         id: 1,
-        label: 'Nutrient Name vs Number',
+        label: 'Nutrient Name vs Grams',
         backgroundColor: 'rgba(209, 188, 227, 1)',
         data
       }]

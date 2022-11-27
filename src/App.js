@@ -32,7 +32,10 @@ function App() {
         searchQuery={searchInput}
         setSearchQuery={setSearchInput}
       />
-      Heyy, See {searchInput} Nutirents<br/>
+      <br></br>
+      Here are {searchInput}'s Nutirents<br/>
+      <br/>
+      <br/>
       <Chart info={items} />
     </div>
   );
