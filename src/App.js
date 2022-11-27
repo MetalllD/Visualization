@@ -45,9 +45,7 @@ function App() {
       <div className="charts">
       <Chart2 info={items.foodNutrients} />
       </div>
-      <div className="charts">
-      <Energy info={items.foodNutrients} />
-      </div>
+      
     </div>
   );
 }
