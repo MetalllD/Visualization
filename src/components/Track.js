@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect, useState } from 'react';
 import Sketch from "react-p5";
 import Search from './SearchBar';
-import { setup, draw } from "react-p5";
+import { setup, draw, mouseX, mouseY } from "react-p5";
 
 async function fetchPost(setItems,x) {
     const response = await fetch(
@@ -44,7 +44,9 @@ p5.fill(140, 191, 248, 60);
 ;}
 
 draw = p5 => {
-p5.circle(x, y, energy);
+p5.circle(x,y, energy);
+if(energy>260){y=y+2;}
+
 }
  
  
