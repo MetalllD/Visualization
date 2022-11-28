@@ -2,15 +2,16 @@ import Track from './Track';
 import Fun from './Fun';
 import Navbar from './NavBar';
 import App from '../App';
+import Intro from './Intro';
 import { Routes, Route } from "react-router-dom";
 
 function Home(){
     return(
         <div>
             <Navbar />
-            <App />
             <Routes>
-                <Route path="/" element={<App />} />
+                <Route path="*" element={<Intro />} />
+                <Route path="/home" element={<Intro/>} />
                 <Route path="/App" element={<App />} />
                 <Route path="/Track" element={<Track />} />
                 <Route path="/Fun" element={<Fun />} />
