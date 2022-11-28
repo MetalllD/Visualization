@@ -5,7 +5,6 @@ import Chart2 from "./components/Chart2";
 import Energy from "./components/Energy";
 import Search from './components/SearchBar';
 
-
 async function fetchPost(setItems,x) {
     const response = await fetch(
         "https://api.nal.usda.gov/fdc/v1/foods/search?query="+ x +"&pageSize=1&api_key=go3zpdsGv6uMVAS1L1dSK3X02Aq7i2xQDZzdtl9c"
@@ -30,22 +29,23 @@ function App() {
 
   return (
     <div className="App">
-      <Search 
-        searchQuery={searchInput}
-        setSearchQuery={setSearchInput}
-      />
-      <br></br>
-      Here are {searchInput}'s Nutirents<br/>
-      <br/>
-      <br/>
-      (Values are given per {items.servingSize} {items.servingSizeUnit})
-      <div className="charts">
-      <Chart info={items.foodNutrients} />
+      <div className="main">
+       <Search 
+          searchQuery={searchInput}
+          setSearchQuery={setSearchInput}
+        />  
+        <br></br>
+        Here are {searchInput}'s Nutirents<br/>
+        <br/>
+        <br/>
+       (Values are given per {items.servingSize} {items.servingSizeUnit})
+         <div className="charts">
+            <Chart info={items.foodNutrients} />
+        </div>
+        <div className="charts">
+           <Chart2 info={items.foodNutrients} />
+        </div>
       </div>
-      <div className="charts">
-      <Chart2 info={items.foodNutrients} />
-      </div>
-      
     </div>
   );
 }
