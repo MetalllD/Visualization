@@ -7,7 +7,7 @@ export default function Navbar(){
         <nav className="nav">
             <Link className="site-head" to="/home">Nutrifact</Link>
             <ul>
-                <li><Link to="/App">Search</Link></li>
+                <li><Link to="/App">Search Nutrients</Link></li>
                 <li><Link to="/Track">Track</Link></li>
                 <li><Link to="/Fun">Fun</Link></li>
             </ul>

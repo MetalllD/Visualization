@@ -2,7 +2,7 @@ import './SearchBar.css';
 
 
 const SearchBar = ({ searchInput, setSearchInput }) => (
-    <form action="/" method="get">
+    <form method="get">
         <label htmlFor="header-search">
             <div className="visually-hidden"></div>
         </label>
