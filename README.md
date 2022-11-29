@@ -1,3 +1,25 @@
+About the Project:
+
+This project is bascially focused on exploring different ways in which I can communicate the nutrition values of various food items. I chose to visualize the nutiotional values as I believe knowing what you eat is very important. 
+
+The website has three sections. 
+
+1. Search nutirents
+In this section, you can search for any food item and get the visualization of its nutrient content, both in grams and miligrams. For creating the graphs, I have used chart-js-e library.
+
+
+2. Track
+In this section, you can look for calories of different food items in a bubble form. The size of the bubbles are proportional to the calories. I have used P5.js library to create bubbles which can be modified by additional conitions.
+
+
+3. Fun
+This section is just for fun. I have put up some interesting interactions using P5.js library.
+
+
+By - Mital Kamani
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
