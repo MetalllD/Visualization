@@ -1,4 +1,4 @@
-About the Project:
+#About the Project:
 
 This project is bascially focused on exploring different ways in which I can communicate the nutrition values of various food items. I chose to visualize the nutiotional values as I believe knowing what you eat is very important. 
 
