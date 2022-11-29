@@ -7,11 +7,15 @@ import { BrowserRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  <div>
   <React.StrictMode>
+  <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'"></meta>
+  <script src="http://www.google.com/recaptcha/api.js?onload=myCallBack&render=explicit" async defer></script>
     <BrowserRouter>
       <Home />
     </BrowserRouter>
   </React.StrictMode>
+  </div>
 );
 
 // If you want to start measuring performance in your app, pass a function
