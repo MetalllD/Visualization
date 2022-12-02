@@ -42,20 +42,19 @@ export default function Chart(props) {
 
   const {info} = props;
 
-  const [data_g, setData_g] = useState({labels: [], datasets: []});
-  const [data_mg, setData_mg] = useState({labels: [], datasets: []});
+  const [data, setData] = useState({labels: [], datasets: []});
 
-  const adaptInfo_g = useCallback(() => {
+  const adaptInfo = useCallback(() => {
 
-    let dummy = info.filter((item) => item.nutrientName!=="Energy");
+    const dummy = info.filter((item) => item.nutrientName!=="Energy");
 
-    let labels = dummy.filter((item) => item.unitName!=="MG").map((item)=> item.nutrientName)
+    const labels = dummy.filter((item) => item.unitName!=="MG").map((item)=> item.nutrientName)
 
     console.log(labels)
     
-    let data = info.filter((item) => item.unitName!=="MG").map((item)=> item.nutrientNumber)
+    const data = info.filter((item) => item.unitName!=="MG").map((item)=> item.nutrientNumber)
 
-    setData_g({
+    setData({
       labels,
       datasets: [{
         id: 1,
@@ -64,44 +63,15 @@ export default function Chart(props) {
         data
       }]
     })
-  }, [info, setData_g])
-
-  const adaptInfo_mg = useCallback(() => {
-
-    let dummy = info.filter((item) => item.nutrientName!=="Energy");
-
-    let labels = dummy.filter((item) => item.unitName!=="G").map((item)=> item.nutrientName)
-
-    console.log(labels)
-    
-    let data = info.filter((item) => item.unitName!=="G").map((item)=> item.nutrientNumber)
-
-    setData_mg({
-      labels,
-      datasets: [{
-        id: 1,
-        label: 'Nutrient Name vs Grams',
-        backgroundColor: 'rgba(209, 188, 227, 1)',
-        data
-      }]
-    })
-  }, [info, setData_mg])
+  }, [info, setData])
 
   useEffect(() => {
-    if(info) adaptInfo_g()
-  }, [info, adaptInfo_g])
-
-  useEffect(() => {
-    if(info) adaptInfo_mg()
-  }, [info, adaptInfo_mg])
+    if(info) adaptInfo()
+  }, [info, adaptInfo])
 
   if(!info)
     return <>loading...</>
 
-  return (
-    <div>
-      <Bar options={options} data={data_g}/>
-      <Bar options={options} data={data_mg}/>
-    </div>
-  )
+  return <Bar options={options} data={data}/>
+
 }
