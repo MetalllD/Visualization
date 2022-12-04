@@ -22,6 +22,12 @@ ChartJS.register(
     Legend
 );
 
+ChartJS.defaults.backgroundColor = '#FB745D';
+ChartJS.defaults.borderColor = 'rgba(255, 247, 243, 0.3)';
+ChartJS.defaults.color = 'rgb(255, 247, 243)';
+ChartJS.defaults.font.size = 14;
+
+
 export const options = {
   indexAxis: 'x',
   responsive: true,
@@ -31,10 +37,12 @@ export const options = {
     },
     title: {
       display: true,
+      font:{
+        size:20
+      },
       text: 'Nutrients in your food item in G(grams)',
-    },
-  },
-};
+    }
+}};
 
 // const labels = ['Calcium, Ca', 'Iron, Fe', 'Sodium, Na', 'Vitamin C', 'Cholesterol', 'Protein', 'Potassium'];
 
@@ -59,9 +67,8 @@ export default function Chart(props) {
       datasets: [{
         id: 1,
         label: 'Nutrient Name vs Grams',
-        backgroundColor: 'rgba(209, 188, 227, 1)',
         data
-      }]
+    }]
     })
   }, [info, setData])
 

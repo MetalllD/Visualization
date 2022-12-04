@@ -13,11 +13,11 @@ input{
 }
 
 button{
-    background-color:rgb(20, 110, 254);
+    background-color:#424A3B;
     color:rgb(255, 255, 255);
+    border: 1px solid #FFF7F3;
     height:auto;
     width:200px;
     font-size: 16px;
     padding: 1%;
-    border:none;
 }

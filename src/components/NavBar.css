@@ -8,17 +8,19 @@ body{
 
 .nav{
     background-color: #424A3B;
-    color:aliceblue;
+    color:#FFF7F3;
     display: flex;
     justify-content: space-between;
     align-items:center;
-    gap:2rem;
-    padding:1rem 8rem;
-    
+    gap:4rem;
+    padding:1rem 4rem;
+    border-bottom: 1px solid #FFF7F3;
+    Font-size:14px;
 }
 
 .site-head{
     font-size:20px;
+    font-family: 'Righteous', cursive;
 }
 
 .nav ul{
@@ -26,7 +28,7 @@ body{
     padding:0;
     list-style:none;
     display: flex;
-    gap: 1rem;
+    gap: 4rem;
 }
 
 .nav a{
@@ -39,9 +41,9 @@ body{
 }
 
 .nav li.active{
-    color: rgb(181, 214, 252);
+    color: #ff9380;
 }
 
 .nav li:hover{
-    color: rgb(175, 210, 249);
+    color: #ff9380;
 }

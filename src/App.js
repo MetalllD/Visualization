@@ -35,10 +35,10 @@ function App() {
           setSearchQuery={setSearchInput}
         />  
         <br></br>
-        Here are {searchInput}'s Nutirents<br/>
+        <span className="titles"> Here are {searchInput}'s Nutirents</span><br/>
         <br/>
-        <br/>
-       (Values are given per {items.servingSize} {items.servingSizeUnit})
+
+        <span className="titles">(Values are given per {items.servingSize} {items.servingSizeUnit})</span>
          <div className="charts">
             <Chart info={items.foodNutrients} />
         </div>

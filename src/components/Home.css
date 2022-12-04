@@ -1,9 +1,13 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+
 .home {
     text-align: center;
-    background-color: #FFF7F3;
+    background-color: #424A3B;
     color:rgb(140, 191, 248);
-    margin:0;
-    padding:0;
+    font-family: 'Poppins', sans-serif;
   }
   
  
