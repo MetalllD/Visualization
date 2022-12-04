@@ -7,7 +7,8 @@ export default function Intro() {
 
     return(
         <div className="head">
-            This Project is all about FOOOOOOOD!!
+            <h1>NUTRIFACT</h1>
+            <span>This Project is all about FOOOOOOOD!!</span>
             <Lottie1 />
         </div>
     );
