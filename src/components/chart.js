@@ -22,7 +22,7 @@ ChartJS.register(
     Legend
 );
 
-ChartJS.defaults.backgroundColor = '#FB745D';
+ChartJS.defaults.backgroundColor = '#ff9380';
 ChartJS.defaults.borderColor = 'rgba(255, 247, 243, 0.3)';
 ChartJS.defaults.color = 'rgb(255, 247, 243)';
 ChartJS.defaults.font.size = 14;

@@ -1,6 +1,7 @@
 import React from "react";
 import { useEffect, useState } from 'react';
 import Sketch from "react-p5";
+import "./Track.css";
 import Search from './SearchBar';
 import { setup, draw, mouseX, mouseY } from "react-p5";
 
@@ -39,19 +40,17 @@ let y = 200;
  
 setup = (p5, parent) => {
 p5.createCanvas(700, 500).parent(parent);
-p5.background(0);
+p5.background("#424A3B");
 p5.fill(140, 191, 248, 60);
 ;}
 
 draw = p5 => {
 p5.circle(x,y, energy);
-if(energy>260){y=y+2;}
-
 }
  
  
 return (
-    <div>
+    <div className="track">
     <Search 
           searchQuery={searchInput}
           setSearchQuery={setSearchInput}
