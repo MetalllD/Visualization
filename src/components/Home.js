@@ -6,7 +6,11 @@ import Intro from './Intro';
 import { Routes, Route } from "react-router-dom";
 import "./Home.css";
 
+
 function Home(){
+
+   
+
     return(
         <div className="home">
             <Navbar />
@@ -17,6 +21,8 @@ function Home(){
                 <Route path="/Track" element={<Track />} />
                 <Route path="/Fun" element={<Fun />} />
             </Routes>
+
+            
         </div>
 )}
 
