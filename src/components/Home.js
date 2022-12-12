@@ -16,10 +16,10 @@ function Home(){
             <Navbar />
             <Routes>
                 <Route path="*" element={<Intro />} />
-                <Route path="/home" element={<Intro/>} />
-                <Route path="/App" element={<App />} />
-                <Route path="/Track" element={<Track />} />
-                <Route path="/Fun" element={<Fun />} />
+                <Route path="gh-pages-url/Home" element={<Intro/>} />
+                <Route path="gh-pages-url/Search" element={<App />} />
+                <Route path="gh-pages-url/Fun" element={<Track />} />
+                <Route path="gh-pages-url/Impact" element={<Fun />} />
             </Routes>
 
             
