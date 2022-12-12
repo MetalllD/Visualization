@@ -4,7 +4,7 @@ import * as d3 from "d3";
 import { useRef, useEffect, useState } from 'react';
 import BubbleChart from "@weknow/react-bubble-chart-d3";
 import useScreenSize from "use-screen-size";
-
+import ReactDOM from "react-dom";
 
 export default function D3chart() {
     
