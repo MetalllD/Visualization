@@ -824,31 +824,7 @@
     "Scarcity-weighted water use per 100g protein (liters per 100g protein)": 5758.4,
     "Scarcity-weighted water use per 1000kcal (liters per 1000 kilocalories)": 556.9052224
   },
-  {
-    "Food_product": "Beef (beef herd)",
-    "Land use change": 16.3,
-    "Animal Feed": 1.9,
-    "Farm": 39.4,
-    "Processing": 1.3,
-    "Transport": 0.3,
-    "Packging": 0.2,
-    "Retail": 0.2,
-    "Total_emissions": 59.599999999999994,
-    "Eutrophying emissions per 1000kcal (gPO₄eq per 1000kcal)": 110.4065934,
-    "Eutrophying emissions per kilogram (gPO₄eq per kilogram)": 301.41,
-    "Eutrophying emissions per 100g protein (gPO₄eq per 100 grams protein)": 151.1584754,
-    "Freshwater withdrawals per 1000kcal (liters per 1000kcal)": 531.5750916000001,
-    "Freshwater withdrawals per 100g protein (liters per 100g protein)": 727.7833501,
-    "Freshwater withdrawals per kilogram (liters per kilogram)": 1451.2,
-    "Greenhouse gas emissions per 1000kcal (kgCO₂eq per 1000kcal)": 36.43956044,
-    "Greenhouse gas emissions per 100g protein (kgCO₂eq per 100g protein)": 49.88966901,
-    "Land use per 1000kcal (m² per 1000kcal)": 119.4908425,
-    "Land use per kilogram (m² per kilogram)": 326.21,
-    "Land use per 100g protein (m² per 100g protein)": 163.5957874,
-    "Scarcity-weighted water use per kilogram (liters per kilogram)": 34732.5,
-    "Scarcity-weighted water use per 100g protein (liters per 100g protein)": 17418.50552,
-    "Scarcity-weighted water use per 1000kcal (liters per 1000 kilocalories)": 12722.52747
-  },
+  
   {
     "Food_product": "Beef (dairy herd)",
     "Land use change": 0.9,

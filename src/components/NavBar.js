@@ -8,8 +8,8 @@ export default function Navbar(){
             <Link className="site-head" to="/home">NUTRIFACT</Link>
             <ul>
                 <li><Link to="/App">SEARCH NUTRIENTS</Link></li>
-                <li><Link to="/Track">PLAY WITH CALORIES</Link></li>
-                <li><Link to="/Fun">FUN WITH P5</Link></li>
+                <li><Link to="/Fun">ENVIRONMENTAL IMPACT</Link></li>
+                <li><Link to="/Track">FUN WITH P5</Link></li>
             </ul>
         </nav>
     )
