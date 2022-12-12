@@ -52,7 +52,6 @@ p5.circle(x,y, energy);
 return (
     <div className="track">
     <Search 
-          searchQuery={searchInput}
           setSearchQuery={setSearchInput}
         /> 
     <Sketch setup={setup} draw={draw} />

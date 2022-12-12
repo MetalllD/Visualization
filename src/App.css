@@ -1,8 +1,9 @@
 .main {
   text-align: center;
-  padding:2% 18%;
+  padding:0% 20%;
   background-color: #424A3B;
   color:rgb(140, 191, 248);
+  padding-bottom:10%;
 }
 
 .titles{
@@ -10,9 +11,10 @@
   color:#FFF7F3;
 }
 
-Bar{
-  margin:10%;
+.charts{
+  margin-bottom:10%;
 }
+
 
 img 
 {

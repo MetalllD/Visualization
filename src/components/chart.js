@@ -100,7 +100,9 @@ export default function Chart(props) {
 
   return (
     <div>
-      <Bar options={options} data={data_g}/>
+      <div className="charts">
+         <Bar options={options} data={data_g}/>
+      </div>
       <Bar options={options} data={data_mg}/>
     </div>
   )

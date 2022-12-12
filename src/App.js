@@ -37,7 +37,6 @@ function App() {
     <div className="App">
       <div className="main">
        <Search 
-          searchQuery={searchInput}
           setSearchQuery={setSearchInput}
         />  
         {noResult ? <div style={{paddingTop:"10px"}}>No Results found</div> : 
@@ -46,10 +45,10 @@ function App() {
         <br></br>
         <FoodImage altText={searchInput} />
         <br></br>
-        <span className="titles"> Here are {searchInput}'s Nutirents</span><br/>
+        <span className="titles"> Here are {searchInput}'s Nutirents
+        (Values are given per {items.servingSize} {items.servingSizeUnit})</span>
         <br/>
 
-        <span className="titles">(Values are given per {items.servingSize} {items.servingSizeUnit})</span>
          <div className="charts">
             <Chart info={items.foodNutrients} />
         </div>
