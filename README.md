@@ -1,22 +1,23 @@
 # About the Project:
 
-This project is bascially focused on exploring different ways in which I can communicate the nutrition values of various food items. I chose to visualize the nutiotional values as I believe knowing what you eat is very important. 
+This project is basically focused on exploring different ways in which I can communicate the nutritional values of various food items. I chose to visualize the nutritional values as I believe knowing what you eat is very important. 
 
 The website has three sections. 
 
-### 1. Search nutirents
-In this section, you can search for any food item and get the visualization of its nutrient content, both in grams and miligrams. For creating the graphs, I have used chart-js-e library.
+### 1. Search nutrients
+In this section, you can search for any food item and get the visualization of its nutrient contents, both in grams and milligrams. For creating the graphs, I have used the chart-js-2 library.
 
 
-### 2. Track
-In this section, you can look for calories of different food items in a bubble form. The size of the bubbles are proportional to the calories. I have used P5.js library to create bubbles which can be modified by additional conitions.
+### 2. Environmental Impact
+In this section, you can find greenhouse gas emissions per kg of food product(Kg CO2 - equivalents per kg product) across different stages in the lifecycle of food production. The size and color of different bubbles are based on its co2 emissions. For creating the visualization, I have used the P5.js library.
 
 
 ### 3. Fun
-This section is just for fun. I have put up some interesting interactions using P5.js library.
+This section is just for fun. I have put up some interesting spirographs using the P5.js library.
 
 
 By - Mital Kamani
+
 =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
 
 
