@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import Home from './components/Home';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter, BrowserRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -11,9 +11,9 @@ root.render(
   
   <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'"></meta>
   <script src="http://www.google.com/recaptcha/api.js?onload=myCallBack&render=explicit" async defer></script>
-    <BrowserRouter>
+    <HashRouter>
       <Home />
-    </BrowserRouter>
+    </HashRouter>
   
   </div>
 );
